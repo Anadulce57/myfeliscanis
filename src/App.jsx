@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>Introduzindo</h1>
+      <h1 className="font-[Gloock]">Introduzindo</h1>
     </div>
   )
 }
