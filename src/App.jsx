@@ -1,7 +1,9 @@
+import LoginPage from "./components/ CadastroLogin/CadastroLogin"
+
 function App() {
   return (
     <div>
-      <h1 className="font-[Gloock]">Introduzindo</h1>
+      <LoginPage theme="dark"/>
     </div>
   )
 }
