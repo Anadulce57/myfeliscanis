@@ -4,26 +4,26 @@ const membros = [
   {
     nome: "Ana Dulce",
     descricao: "A nerd doida viciada em Senhor dos Anéis que lidera a equipe. Futura Engenheira da Computação.",
-    imagem: "/ana.png",
+    imagem: "./public/imgs/AnaDulce.png",
   },
   {
     nome: "Sara",
     descricao: " A patricinha estranha do grupo que cada fala trás uma dúvida. Futura profissional em Sistemas da Informação",
-    imagem: "/sara.png",
+    imagem: "./public/imgs/Sara.png",
   },
   {
     nome: "Mariana",
     descricao: "A integrante que trás ideias de temas fofos e diversos. Futura Profissional em Marketing Digital",
-    imagem: "/mariana.png",
+    imagem: "./public/imgs/Mariana.png",
   },
   {
     nome: "Júlia",
     descricao: "A integrante zoeira que traz uma risada toda hora, aténo erro 404 do Back-end. Futura Designer; ",
-    imagem: "/julia.png",
+    imagem: "./public/imgs/Julia.png",
   },
 ];
 
-export default function Time() {
+export default function Membros() {
   const [index, setIndex] = useState(0);
 
   const next = () => setIndex((prev) => (prev + 1) % membros.length);
@@ -36,7 +36,7 @@ export default function Time() {
       {/* Desktop layout */}
       <div className="hidden lg:flex justify-between gap-6">
         {membros.map((membro, i) => (
-          <div key={i} className="bg-[#e7dce0] text-black rounded-2xl px-6 pt-16 pb-6 text-center relative flex-1 shadow-md">
+          <div key={i} className="bg-[#e7dce0] text-black rounded-2xl px-6 pt-16 pb-6 text-center relative flex-1 shadow-md h-9/10">
             <img src={membro.imagem} alt={membro.nome} className="w-20 h-20 rounded-full absolute top-[-40px] left-1/2 transform -translate-x-1/2 object-cover border-4 border-[#e7dce0]" />
             <h3 className="text-xl font-semibold">{membro.nome}</h3>
             <p className="mt-2 text-sm">{membro.descricao}</p>
@@ -59,7 +59,7 @@ export default function Time() {
         </div>
       </div>
 
-      <p className="text-center text-sm mt-12 text-[#cccccc]">Dúvidas? hama no insta @Felilis_Canis</p>
+      <p className="text-center text-sm mt-12 text-[#cccccc]">Dúvidas? Chama no insta @Felilis_Canis</p>
     </div>
   );
 }
