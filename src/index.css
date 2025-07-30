@@ -12,3 +12,11 @@
     font-weight: weight;
     font-style: normal
   }
+
+  :root {
+    --off-white: #7A4A33;
+    --dark-blue: #161925;
+    --green: #5B8266;
+    --off-white: #F9F5F3;
+    --black: #0E0209;
+  }
