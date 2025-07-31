@@ -37,7 +37,7 @@ export default function Referencias() {
       {/* Imagem do cachorro - só aparece no desktop */}
       <div className="flex-1 hidden lg:flex items-center justify-center">
         <img
-          src="/cachorro-dormindo.jpg" // substitua por seu path real
+          src="./public/imgs/cao1-Thor.png" // substitua por seu path real
           alt="Cachorro dormindo"
           className="rounded-lg w-full max-w-md object-cover"
         />
