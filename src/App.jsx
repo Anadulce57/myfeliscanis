@@ -1,11 +1,11 @@
+import LoginPage from "./components/ CadastroLogin/CadastroLogin"
 import ControleItens from "./components/ColetaDados/ControleItens"
 import Instrucoes from "./components/Instrucoes"
-import Referencias from "./components/Referencias"
 
 function App() {
   return (
     <div>
-      <Referencias/>
+      <Instrucoes/>
     </div>
   )
 }

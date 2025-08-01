@@ -9,7 +9,7 @@ export default function Instrucoes() {
       <main className="flex flex-col lg:flex-row max-w-7xl mx-auto px-6 py-16 gap-16">
         {/* Passos */}
         <aside className="flex-1">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6">Como usar o dispositivo</h2>
+          <h2 className="text-2xl text-[var(--off-brown)] font-semibold mb-6">Como usar o dispositivo</h2>
           <ol className="space-y-4 list-decimal list-inside text-gray-700 text-lg leading-relaxed">
             <li>Instale o dispositivo na incubadora e conecte à energia.</li>
             <li>
