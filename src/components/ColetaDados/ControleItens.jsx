@@ -20,14 +20,14 @@ export default function ControleItens() {
 
       {/* Conteúdo principal */}
       <main className="px-4 md:px-10 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Controle de Itens</h1>
+        <h1 className="font-[Gloock] text-3xl font-bold text-gray-900 mb-8">Controle de Itens</h1>
 
         {/* Tabela Responsiva */}
         <div className="bg-gray-900 text-white rounded-lg shadow-lg overflow-x-auto">
           {/* Cabeçalho */}
           <div className="grid grid-cols-3 items-center border-b border-gray-700 px-6 py-4 min-w-[360px]">
-            <span className="text-sm font-semibold">Nome</span>
-            <span className="text-sm font-semibold">Preço</span>
+            <span className="font-[Montserrat]text-sm font-semibold">Nome</span>
+            <span className=" font-[Montserrat]text-sm font-semibold">Preço</span>
             <button
               className="text-right"
               aria-label="Adicionar item"
@@ -45,7 +45,7 @@ export default function ControleItens() {
               className="grid grid-cols-3 items-center px-6 py-4 border-t border-gray-800 min-w-[360px]"
             >
               {/* Nome com ícone circular */}
-              <div className="flex items-center gap-4">
+              <div className="font-[Montserrat] flex items-center gap-4">
                 <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm uppercase">
                   {item.nome[0]}
                 </div>
@@ -53,7 +53,7 @@ export default function ControleItens() {
               </div>
 
               {/* Preço */}
-              <span className="text-sm">{item.preco}</span>
+              <span className="font-[Montserrat] text-sm">{item.preco}</span>
 
               {/* Ações */}
               <div className="flex justify-end gap-4">
