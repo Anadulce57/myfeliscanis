@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Membros from "./components/Membros"
 import Produto from "./components/Produto"
 import LoginPage from "./components/CadastroLogin/CadastroLogin"
+import GameIntro from "./components/Game/Game";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/login" element={<LoginPage theme={theme} funcao="login"/>}/>
           <Route path="/membros" element={<Membros theme={theme}/>}/>
           <Route path="/produto" element={<Produto theme={theme}/>}/>
+          <Route path="/game" element={<GameIntro theme={theme}/>}/>
         </Routes>
       </Router>
     </div>
