@@ -1,10 +1,6 @@
 export default function Instrucoes() {
   return (
-    <div className="min-h-screen bg-gray-50 relative font-sans">
-      {/* Círculos de fundo decorativos */}
-      <div className="absolute top-20 left-0 w-72 h-72 rounded-full bg-gray-200 opacity-20"></div>
-      <div className="absolute bottom-20 right-0 w-96 h-96 rounded-full bg-gray-200 opacity-20"></div>
-
+    <div className="min-h-screen relative">
       {/* Conteúdo principal */}
       <main className="flex flex-col lg:flex-row max-w-7xl mx-auto px-6 py-16 gap-16">
         {/* Passos */}

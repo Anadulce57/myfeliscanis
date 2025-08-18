@@ -30,13 +30,13 @@ export default function Membros() {
   const prev = () => setIndex((prev) => (prev - 1 + membros.length) % membros.length);
 
   return (
-    <div className="bg-[#0f101c] text-white py-10 px-4 md:px-16 min-h-screen">
+    <div className=" text-white py-10 px-4 md:px-16 min-h-screen">
       <h1 className=" font-[Gloock]  text-center text-4xl font-bold text-[#e7dce0] mb-12">Conheça o time</h1>
 
       {/* Desktop layout */}
-      <div className="hidden lg:flex justify-between gap-6">
+      <div className="hidden lg:flex justify-between gap-6 h-73">
         {membros.map((membro, i) => (
-          <div key={i} className="bg-[#e7dce0] text-black rounded-2xl px-6 pt-16 pb-6 text-center relative flex-1 shadow-md h-9/10">
+          <div key={i} className="bg-[#e7dce0] text-black rounded-2xl px-6 pt-16 pb-6 text-center relative flex-1 shadow-md h-full">
             <img src={membro.imagem} alt={membro.nome} className="w-20 h-20 rounded-full absolute top-[-40px] left-1/2 transform -translate-x-1/2 object-cover border-4 border-[#e7dce0]" />
             <h3 className="text-xl font-semibold">{membro.nome}</h3>
             <p className= "font-[Montserrat] text-[var(--black)] mt-2 text-sm">{membro.descricao}</p>
@@ -59,7 +59,7 @@ export default function Membros() {
         </div>
       </div>
 
-      <p className="text-center text-sm mt-12 text-[#cccccc]">Dúvidas? Chama no insta @Fellis_Canis</p>
+      <p className="text-left text-sm mt-120 text-[#cccccc]">Dúvidas? Chama no insta @Fellis_Canis</p>
     </div>
   );
 }

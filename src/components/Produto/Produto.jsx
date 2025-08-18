@@ -1,28 +1,16 @@
+import dispositivo from "/imgs/dispositivo.png"
+
 export default function Produto() {
   return (
-    <div className="bg-[#FAFAFA] min-h-screen font-sans text-gray-800">
+    <div className=" min-h-screen font-sans text-gray-800">
       {/* Navbar */}
-      <header className="flex justify-between items-center px-8 py-4 border-b border-gray-200">
-        <div className="flex items-center gap-6">
-          <div className="w-10 h-10 rounded-full bg-black" />
-          <nav className="hidden md:flex gap-5 text-sm text-gray-600">
-            <span>Dashboard</span>
-            <span>Instruções</span>
-            <span>O produto</span>
-            <span>Nosso jogo</span>
-            <span>Quem somos?</span>
-            <span>Referências</span>
-          </nav>
-        </div>
-        <div className="text-xl">🔄</div>
-      </header>
 
       {/* Conteúdo */}
       <main className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-8 py-6">
         {/* Coluna 1 - Produto */}
         <div className="flex flex-col items-center">
           <img
-            src="./public/imgs/dispositivo.png"
+            src={dispositivo}
             alt="Dispositivo"
             className="w-48 mb-4"
           />

@@ -4,7 +4,7 @@ export default function GameIntro() {
   return (
     <div className="flex h-screen overflow-hidden font-inter">
       {/* Lado esquerdo */}
-      <div className="w-1/2 bg-[#fef9f8] px-16 py-20 flex flex-col justify-center mb-50">
+      <div className="w-1/2 px-16 py-20 flex flex-col justify-center mb-50">
         <h1 className="text-5xl mb-20">Conheça nosso jogo</h1>
         <p className="text-lg leading-relaxed">
           Conheça agora um jogo incrível e cheio de magia inspirado em Studio Ghibli,

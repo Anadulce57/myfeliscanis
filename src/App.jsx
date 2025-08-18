@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Membros from "./components/Menbros/Membros"
+import Membros from "./components/Membros/Membros"
 import Produto from "./components/Produto/Produto"
-import LoginPage from "./components/CadastroLogin/CadastroLogin"
 import GameIntro from "./components/Game/Game";
 import Referencias from "./components/Referencias/Referencias";
-import ControleItens from "./components/ColetaDados/ControleItens"
 import Instrucoes from "./components/Instrucoes/Instrucoes"
 import Home from "./components/Home/Home"
 
@@ -27,7 +25,7 @@ function App() {
     }
   }, []);
   
-  const isDark = theme === "white";
+  const isDark = theme === "dark";
 
   return (
     <div 
@@ -41,13 +39,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home theme={theme} />}/>
-          <Route path="/cadastro" element={<LoginPage theme={theme} funcao="cadastro"/>}/>
-          <Route path="/login" element={<LoginPage theme={theme} funcao="login"/>}/>
           <Route path="/membros" element={<Membros theme={theme}/>}/>
           <Route path="/produto" element={<Produto theme={theme}/>}/>
           <Route path="/game" element={<GameIntro theme={theme}/>}/>
           <Route path="/referencias" element={<Referencias theme={theme}/>}/>
-          <Route path="/controleitens" element={<ControleItens theme={theme}/>}/>
           <Route path="/instrucoes" element={<Instrucoes theme={theme}/>}/>
         </Routes>
       </Router>
