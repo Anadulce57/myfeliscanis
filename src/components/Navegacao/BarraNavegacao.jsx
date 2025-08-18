@@ -1,32 +1,29 @@
 export default function BarraNavegacao() {
 
     return(
-        <div>
-            <header>
+        <header>
 
-                <button className=""></button>
+        <button className=""></button>
 
-                <nav className="">
-                        <button></button>
-            
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                </nav>
+        <nav className="">
+                <button></button>
+    
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+        </nav>
 
-                <nav className="">
+        <nav className="">
 
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </nav>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
 
-            </header>
-
-        </div>
+    </header>
     )
 }
