@@ -25,7 +25,7 @@ function App() {
     }
   }, []);
   
-  const isDark = theme === "dark";
+  const isDark = theme === "light";
 
   return (
     <div 

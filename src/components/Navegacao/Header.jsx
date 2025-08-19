@@ -5,27 +5,27 @@ export default function Header() {
     return(
         <header>
 
-        <button className=""></button>
+        <nav className="flex justify-end items-center p-4">
 
-        <nav className="">
-                <button>
-                    <Link to="/">Home</Link>
-                </button>
-
-                <ul>
+                <ul className="flex space-x-10 me-12">
                     <li>
+                        <button className="cursor-pointer">
+                            <span class="material-symbols-outlined">mode_night</span>
+                        </button>
+                    </li>
+                    <li className="hover:underline">
                         <Link to="/instrucoes">Instruções</Link>
                     </li>
-                    <li>
+                    <li className="hover:underline">
                         <Link to="/produto">O produto</Link>
                     </li>
-                    <li>
+                    <li className="hover:underline">
                         <Link to="/game">Nosso jogo</Link>
                     </li>
-                    <li>
-                        <Link to="/menbros">Quem somos?</Link>
+                    <li className="hover:underline">
+                        <Link to="/membros">Quem somos?</Link>
                     </li>
-                    <li>
+                    <li className="hover:underline">
                         <Link to="/referencias">Referências</Link>
                     </li>
                 </ul>

@@ -1,14 +1,17 @@
+import Header from "../Navegacao/Header"
+
 export default function Home(){
     return(
         <div className="h-screen">
+          <Header/>
         <section className="flex flex-col lg:flex-row items-center mr-16">
           <div className="w-full h-dvh flex flex-col justify-center items-center p-8">
-            <img src="./public/imgs/pets.jpg" alt="pets" className="w-full h-auto max-w-md lg:max-w-full rounded-lg shadow-lg"/>
-            <h1 className="text-4xl lg:text-3xl font-bold text-gray-900 mt-8 text-left">Venha conhecer mais sobre a nossa 
+            <img src="./public/imgs/pets.jpg" alt="pets" className="w-[550] h-[550] max-w-md lg:max-w-full rounded-lg shadow-lg"/>
+            <h1 className="text-4xl lg:text-3xl font-bold text-gray-900 mt-7 text-left">Venha conhecer mais sobre a nossa 
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>
           </div>
   
-          <div className="w-full lg:w-[419px] bg-gray-900 text-white p-8 flex flex-col justify-center">
+          <div className="w-full lg:w-[800px] h-[350] bg-gray-900 text-white p-8 flex flex-col justify-center">
             <div className="mb-9">
               <h1 className="text-3xl font-bold mb-4">A empresa</h1>
               <p className="text-gray-300 text-lg">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
