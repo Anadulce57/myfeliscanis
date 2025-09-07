@@ -4,10 +4,10 @@ import Header from "../Navegacao/Header"
 export default function GameIntro() {
   return (
     <div className="flex h-screen overflow-hidden font-inter">
-      <div className="w-1/2 px-16 py-20 flex flex-col mb-50 justify-end">
+      <div className="w-1/2 px-16 py-20 flex flex-col mb-55 justify-end">
       <Header/>
-        <h1 className="text-5xl mb-20">Conheça nosso jogo</h1>
-        <p className="text-lg leading-relaxed">
+        <h1 className="text-5xl mb-15 font-[Gloock] ">Conheça nosso jogo</h1>
+        <p className="text-lg leading-relaxed font-[Montserrat]">
           Conheça agora um jogo incrível e cheio de magia inspirado em Studio Ghibli,
           onde você terá a missão de procurar por filhotes perdidos em uma floresta cheia
           de mistérios. Mas tome cuidado pois na sombra habita aquele que todos temem!

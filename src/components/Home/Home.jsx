@@ -10,14 +10,14 @@ export default function Home(){
         <section className="flex flex-col lg:flex-row items-center mr-18">
           <div className="w-full h-dvh flex flex-col justify-center items-center p-8">
             <img src={Imagem} alt="pets" className=" w-[682] h-[401] max-w-md lg:max-w-full rounded-sm shadow-lg my-1 translate-y-[-77px]"/>
-            <h1 className="text-4xl lg:text-3xl font-bold text-gray-900 mt-7 text-left translate-y-[-80px] ">Venha conhecer mais sobre a nossa 
+            <h1 className="text-4xl font-[Montserrat] lg:text-3xl font-bold text-gray-900 mt-7 text-left translate-y-[-80px] ">Venha conhecer mais sobre a nossa 
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>
           </div>
   
           <div className="w-full lg:w-[700px] h-[250] bg-gray-900 text-white p-8 flex flex-col justify-center rounded-sm">
             <div className="mb-9">
-              <h1 className="text-3xl font-bold mb-3">A empresa</h1>
-              <p className="text-gray-300 text-lg">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
+              <h1 className="text-3xl font-bold mb-3 font-[Montserrat]">A empresa</h1>
+              <p className="text-gray-300 text-lg font-[Montserrat]">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
               do número de animais de estimação e pela valorização dos cuidados com seu bem-estar. Hoje, os pets são vistos 
               como membros da família, o que estimula a busca por produtos e serviços especializados. Esse cenário reforça a 
               importância de discutir a melhora dos cuidados com os animais e os impactos desse setor em expansão.</p>
@@ -25,13 +25,13 @@ export default function Home(){
   
             <div className="mb-9">
               <h1 className="text-3xl font-bold mb-4">Objetivo</h1>
-              <p className="text-gray-300 text-lg">Impactar o mercado pet, que está em crescente expansão, a partir do uso da 
+              <p className="text-gray-300 text-lg font-[Montserrat]">Impactar o mercado pet, que está em crescente expansão, a partir do uso da 
               tecnologia de monitoramento e gerenciamento.</p>
             </div>
   
             <div>
               <h1 className="text-3xl font-bold mb-4">Metodologia</h1>
-              <p className="text-gray-300 text-lg">A metodologia da pesquisa aplicada foi revisão bibliográfica de artigos 
+              <p className="text-gray-300 text-lg font-[Montserrat]">A metodologia da pesquisa aplicada foi revisão bibliográfica de artigos 
               científicos publicados entre 2019 e 2022.</p>
             </div>
           </div>
