@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from "../Navegacao/Header"
+
 
 export default function Referencias() {
   const artigos = [
@@ -8,7 +10,7 @@ export default function Referencias() {
     },
     {
       titulo: "Artigo 2",
-      descricao: "COLIERA INTELIGENTE: Desenvolvimento de um Protótipo para Monitoramento de Sinais Vitais de Cães e Gatos"
+      descricao: "COLEIRA INTELIGENTE: Desenvolvimento de um Protótipo para Monitoramento de Sinais Vitais de Cães e Gatos"
     },
     {
       titulo: "Artigo 3",
@@ -21,10 +23,10 @@ export default function Referencias() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5] text-black flex flex-col lg:flex-row px-4 md:px-20 py-10 gap-8">
-      {/* Conteúdo de texto */}
+    <div className="min-h-screen bg-[#f5f5f5] ">
+           <Header/>
       <div className="flex-1">
-        <h1 className="font-[Gloock] text-3xl font-bold mb-6">Referências</h1>
+        <h1 className="font-[Gloock] text-3xl font-bold mb-6 ">Referências</h1>
         <ul className="space-y-4">
           {artigos.map((artigo, index) => (
             <li key={index} className='font-[Montserrat]'>
@@ -35,11 +37,11 @@ export default function Referencias() {
       </div>
 
       {/* Imagem do cachorro - só aparece no desktop */}
-      <div className="flex-1 hidden lg:flex items-center justify-center">
+      <div className="flex-1 hidden lg:flex items-center justify-center runded-sm">
         <img
-          src="./public/imgs/cao1-Thor.png" // substitua por seu path real
+          src="/imgs/cao1-Thor.png"
           alt="Cachorro dormindo"
-          className="rounded-lg w-full max-w-md object-cover"
+          className="rounded-sm w-full max-w-md object-cover"
         />
       </div>
     </div>

@@ -1,30 +1,31 @@
 import dispositivo from "/imgs/dispositivo.png"
+import Header from "../Navegacao/Header"
 
 export default function Produto() {
   return (
     <div className=" min-h-screen font-sans text-gray-800">
+       <Header/>
       {/* Navbar */}
 
       {/* Conteúdo */}
-      <main className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-8 py-6">
+      <main className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 py-20 items-center"> 
         {/* Coluna 1 - Produto */}
-        <div className="flex flex-col items-center">
+        <div className=" flex flex-col md:flex-row items-center md:items-start gap-5 p-5">
           <img
             src={dispositivo}
             alt="Dispositivo"
-            className="w-48 mb-4"
+            className="mb-4 w-85 my-1 translate-y-[-120px]"
           />
         </div>
 
         {/* Coluna 2 - Descrição */}
-        <div className="bg-[#0E1016] text-white p-6 rounded-lg space-y-6">
+        <div className="bg-[#0E1016] text-white p-6 rounded-sm space-y-6 " >
           <div>
             <h1 className="font-[Montserrat] text-[var(--off-white)] text-2xl font-bold mb-2">Smart FelisCanis</h1>
             <p className="font-[Montserrat] text-sm">
               O desenvolvimento de um dispositivo portátil IOT evidencia o potencial de inovação no mercado pet, oferecendo auxílios práticos que atendem às necessidades tanto dos animais quanto de seus tutores.
             </p>
           </div>
-
           <div>
             <h2 className="text-xl font-semibold mb-1">Objetivo</h2>
             <p className="font-[Montserrat] text-sm">

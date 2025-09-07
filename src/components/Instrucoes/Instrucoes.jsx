@@ -1,12 +1,14 @@
+import Header from "../Navegacao/Header"
+
 export default function Instrucoes() {
   return (
-    <div className="min-h-screen relative">
-      {/* Conteúdo principal */}
+    <div className="min-h-screen relative pt-2">
+     <Header/>
       <main className="flex flex-col lg:flex-row max-w-7xl mx-auto px-6 py-16 gap-16">
         {/* Passos */}
         <aside className="flex-1">
-          <h2 className="text-2xl text-[var(--off-brown)] font-semibold mb-6">Como usar o dispositivo</h2>
-          <ol className="space-y-4 list-decimal list-inside text-gray-700 text-lg leading-relaxed">
+          <h2 className="text-2xl text-[var(--off-brown)]  text-gray-850 font-semibold mb-6 mt-7 ">Como usar o dispositivo</h2>
+          <ol className="space-y-4 list-decimal list-inside text-gray-700  text-lg leading-relaxed">
             <li>Instale o dispositivo na incubadora e conecte à energia.</li>
             <li>
               Configure pelo app ou painel: defina o tipo de animal e a temperatura ideal.
@@ -24,9 +26,9 @@ export default function Instrucoes() {
         {/* Imagem */}
         <section className="flex-1 flex items-center justify-center">
           <img
-            src="./public/imgs/caoGato.jpg"
+            src="./imgs/caoGato.jpg"
             alt="Imagem de um cachorro e um gato representando os animais monitorados"
-            className="rounded-xl max-w-full h-auto shadow-xl"
+            className=" max-w-full h-auto shadow-xl rounded-sm"
           />
         </section>
       </main>

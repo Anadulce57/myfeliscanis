@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../Navegacao/Header"
 
 export default function GameIntro() {
   return (
     <div className="flex h-screen overflow-hidden font-inter">
-      {/* Lado esquerdo */}
-      <div className="w-1/2 px-16 py-20 flex flex-col justify-center mb-50">
+      <div className="w-1/2 px-16 py-20 flex flex-col mb-50 justify-end">
+      <Header/>
         <h1 className="text-5xl mb-20">Conheça nosso jogo</h1>
         <p className="text-lg leading-relaxed">
           Conheça agora um jogo incrível e cheio de magia inspirado em Studio Ghibli,
@@ -15,7 +16,7 @@ export default function GameIntro() {
       </div>
       <div className="w-1/2 relative flex items-center justify-center" style={{ clipPath: "polygon(12% 0, 100% 0, 100% 100%, 0% 100%)" }} >
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 h-full object-cover w-full"
           autoPlay
           loop
           muted

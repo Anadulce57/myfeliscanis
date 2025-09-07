@@ -1,19 +1,22 @@
 import Header from "../Navegacao/Header"
+import Imagem from "/imgs/pets.jpg"
+
+
 
 export default function Home(){
     return(
         <div className="h-screen">
           <Header/>
-        <section className="flex flex-col lg:flex-row items-center mr-16">
+        <section className="flex flex-col lg:flex-row items-center mr-18">
           <div className="w-full h-dvh flex flex-col justify-center items-center p-8">
-            <img src="./public/imgs/pets.jpg" alt="pets" className="w-[550] h-[550] max-w-md lg:max-w-full rounded-lg shadow-lg"/>
-            <h1 className="text-4xl lg:text-3xl font-bold text-gray-900 mt-7 text-left">Venha conhecer mais sobre a nossa 
+            <img src={Imagem} alt="pets" className=" w-[682] h-[401] max-w-md lg:max-w-full rounded-sm shadow-lg my-1 translate-y-[-77px]"/>
+            <h1 className="text-4xl lg:text-3xl font-bold text-gray-900 mt-7 text-left translate-y-[-80px] ">Venha conhecer mais sobre a nossa 
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>
           </div>
   
-          <div className="w-full lg:w-[800px] h-[350] bg-gray-900 text-white p-8 flex flex-col justify-center">
+          <div className="w-full lg:w-[700px] h-[250] bg-gray-900 text-white p-8 flex flex-col justify-center rounded-sm">
             <div className="mb-9">
-              <h1 className="text-3xl font-bold mb-4">A empresa</h1>
+              <h1 className="text-3xl font-bold mb-3">A empresa</h1>
               <p className="text-gray-300 text-lg">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
               do número de animais de estimação e pela valorização dos cuidados com seu bem-estar. Hoje, os pets são vistos 
               como membros da família, o que estimula a busca por produtos e serviços especializados. Esse cenário reforça a 

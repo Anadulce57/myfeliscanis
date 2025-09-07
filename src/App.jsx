@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Membros from "./components/Membros/Membros"
-import Produto from "./components/Produto/Produto"
+
+import Membros from "./components/Membros/Membros";
+import Produto from "./components/Produto/Produto";
 import GameIntro from "./components/Game/Game";
 import Referencias from "./components/Referencias/Referencias";
-import Instrucoes from "./components/Instrucoes/Instrucoes"
-import Home from "./components/Home/Home"
+import Instrucoes from "./components/Instrucoes/Instrucoes";
+import Home from "./components/Home/Home";
 
 function App() {
   const [theme, setTheme] = useState("light")
@@ -25,7 +26,8 @@ function App() {
     }
   }, []);
   
-  const isDark = theme === "light";
+  const isDark = theme === "white";
+
 
   return (
     <div 
