@@ -27,10 +27,6 @@ export default function Header() {
                     <li className="hover:underline">
                         <Link to="/referencias">Referências</Link>
                     </li>
-                    <li className="hover:underline">
-                        <Link to="/Home">Home</Link>
-                    </li>
-                  
                 </ul>
         </nav>
 
