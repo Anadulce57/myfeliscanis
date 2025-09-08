@@ -9,7 +9,7 @@ export default function Home(){
           <Header/>
         <section className="flex flex-col lg:flex-row items-center mr-18">
           <div className="w-full h-dvh flex flex-col justify-center items-center p-8">
-            <img src={Imagem} alt="pets" className=" w-[682] h-[401] max-w-md lg:max-w-full rounded-sm shadow-lg my-1 translate-y-[-77px]"/>
+            <img src={Imagem} alt="pets" className=" w-[682] h-[401] max-w-md lg:max-w-full rounded-sm  shadow-lg my-1 translate-y-[-105px]"/>
             <h1 className="text-4xl font-[Montserrat] lg:text-3xl font-bold text-gray-900 mt-7 text-left translate-y-[-80px] ">Venha conhecer mais sobre a nossa 
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>
           </div>

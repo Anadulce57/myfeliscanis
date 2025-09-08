@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from "../Navegacao/Header"
 
-
 export default function Referencias() {
   const artigos = [
     {
@@ -23,26 +22,30 @@ export default function Referencias() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5] ">
-           <Header/>
-      <div className="flex-1">
-        <h1 className="font-[Gloock] text-3xl font-bold mb-6 ">Referências</h1>
-        <ul className="space-y-4">
-          {artigos.map((artigo, index) => (
-            <li key={index} className='font-[Montserrat]'>
-              <span className="font-bold">{artigo.titulo}</span> - {artigo.descricao}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="min-h-screen bg-[#f5f5f5]">
+      <Header />
+      <div className="flex flex-col lg:flex-row gap-8 px-6 py-10">
+        
+        {/* Coluna esquerda - textos */}
+        <div className="flex-1">
+          <h1 className="font-[Gloock] text-3xl font-bold mb-6">Referências</h1>
+          <ul className="space-y-4">
+            {artigos.map((artigo, index) => (
+              <li key={index} className="font-[Montserrat]">
+                <span className="font-bold">{artigo.titulo}</span> - {artigo.descricao}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      {/* Imagem do cachorro - só aparece no desktop */}
-      <div className="flex-1 hidden lg:flex items-center justify-center runded-sm">
-        <img
-          src="/imgs/cao1-Thor.png"
-          alt="Cachorro dormindo"
-          className="rounded-sm w-full max-w-md object-cover"
-        />
+        {/* Coluna direita - imagem */}
+        <div className="flex-1 flex items-center justify-center">
+          <img
+            src="/imgs/cao1-Thor.png"
+            alt="Cachorro dormindo"
+            className="rounded-sm w-full max-w-md object-cover"
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom"
+
 export default function Header() {
 
     return(
         <header>
 
         <nav className="lg:flex justify-end items-center p-4">
+
 
                 <ul className="flex space-x-10 me-12">
                     <li>
