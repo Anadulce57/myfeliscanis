@@ -39,7 +39,7 @@ function App() {
     >
       <Router>
         <Routes>
-          <Route path="/" element={<Home theme={theme} />}/>
+          <Route path="/home" element={<Home theme={theme} />}/>
           <Route path="/membros" element={<Membros theme={theme}/>}/>
           <Route path="/produto" element={<Produto theme={theme}/>}/>
           <Route path="/game" element={<GameIntro theme={theme}/>}/>

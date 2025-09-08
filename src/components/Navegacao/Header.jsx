@@ -6,8 +6,6 @@ export default function Header() {
         <header>
 
         <nav className="lg:flex justify-end items-center p-4">
-
-
                 <ul className="flex space-x-10 me-12">
                     <li>
                         <button className="cursor-pointer">
@@ -29,6 +27,10 @@ export default function Header() {
                     <li className="hover:underline">
                         <Link to="/referencias">Referências</Link>
                     </li>
+                    <li className="hover:underline">
+                        <Link to="/Home">Home</Link>
+                    </li>
+                  
                 </ul>
         </nav>
 
