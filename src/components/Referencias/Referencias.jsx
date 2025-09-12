@@ -22,7 +22,7 @@ export default function Referencias() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5]">
+    <div className="min-h-screen font-sans text-gray-800">
       <Header />
       <div className="flex flex-col lg:flex-row gap-8 px-6 py-10">
         

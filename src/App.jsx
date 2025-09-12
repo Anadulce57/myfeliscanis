@@ -24,15 +24,10 @@ function App() {
       localStorage.setItem("theme", detectedTheme);
     }
   }, []);
-  
-  const isDark = theme === "white";
-
-
-  return (
     <div 
     className={`
       min-h-screen bg-no-repeat bg-cover
-      ${isDark
+      ${theme === "dark"
         ? 'bg-[url("/background/FelisCanisFundo-dark-mobile.png")] md:bg-[url("/background/FelisCanisFundo-dark-desktop.png")]'
         : 'bg-[url("/background/FelisCanisFundo-white-mobile.png")] md:bg-[url("/background/FelisCanisFundo-white-desktop.png")]'}
     `}
@@ -50,7 +45,6 @@ function App() {
 
       
     </div>
-  )
 }
 
 export default App

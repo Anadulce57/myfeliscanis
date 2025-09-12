@@ -7,7 +7,7 @@ export default function Produto() {
       <Header />
 
       {/* Conteúdo */}
-      <main className="grid grid-cols-1 lg:grid-cols-3 gap-24 px-8 py-20 items-start"> 
+      <main className="grid grid-cols-1 lg:grid-cols-3 gap-24 px-8 py-20 items-start w-full"> 
         {/* Coluna 1 - Produto */}
         <div className="flex flex-col items-center gap-5 p-5 translate-y-[-24px]">
           <img
