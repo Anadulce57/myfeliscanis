@@ -1,9 +1,6 @@
 import Header from "../Navegacao/Header"
 import Imagem from "/imgs/pets.jpg"
 
-
-
-
 export default function Home(){
     return(
         <div className="min-h-screen font-sans text-gray-800">

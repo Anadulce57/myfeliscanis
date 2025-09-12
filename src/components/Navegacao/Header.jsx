@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom"
-
 import { useState, useEffect } from "react"
-
 
 export default function Header() {
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") ?? "")

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Membros from "./components/Membros/Membros";
@@ -9,42 +8,20 @@ import Instrucoes from "./components/Instrucoes/Instrucoes";
 import Home from "./components/Home/Home";
 
 function App() {
-  const [theme, setTheme] = useState("light")
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-  
-    if (savedTheme === "dark" || savedTheme === "light") {
-      setTheme(savedTheme);
-    } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const detectedTheme = prefersDark ? "dark" : "light";
-  
-      setTheme(detectedTheme);
-      localStorage.setItem("theme", detectedTheme);
-    }
-  }, []);
-    <div 
-    className={`
-      min-h-screen bg-no-repeat bg-cover
-      ${theme === "dark"
-        ? 'bg-[url("/background/FelisCanisFundo-dark-mobile.png")] md:bg-[url("/background/FelisCanisFundo-dark-desktop.png")]'
-        : 'bg-[url("/background/FelisCanisFundo-white-mobile.png")] md:bg-[url("/background/FelisCanisFundo-white-desktop.png")]'}
-    `}
-    >
+  return (
+    <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Home theme={theme} />}/>
-          <Route path="/membros" element={<Membros theme={theme}/>}/>
-          <Route path="/produto" element={<Produto theme={theme}/>}/>
-          <Route path="/game" element={<GameIntro theme={theme}/>}/>
-          <Route path="/referencias" element={<Referencias theme={theme}/>}/>
-          <Route path="/instrucoes" element={<Instrucoes theme={theme}/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/membros" element={<Membros/>}/>
+          <Route path="/produto" element={<Produto/>}/>
+          <Route path="/game" element={<GameIntro/>}/>
+          <Route path="/referencias" element={<Referencias/>}/>
+          <Route path="/instrucoes" element={<Instrucoes/>}/>
         </Routes>
       </Router>
-
-      
     </div>
+  )
 }
 
 export default App
