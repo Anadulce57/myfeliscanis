@@ -22,13 +22,13 @@ export default function Referencias() {
   ];
 
   return (
-    <div className="min-h-screen font-sans text-gray-800">
+    <div className="min-h-screen font-sans text-gray-800  dark:text-white">
       <Header />
-      <div className="flex flex-col lg:flex-row gap-8 px-6 py-10">
+      <div className="flex flex-col lg:flex-row gap-8 px-6 py-10 text-black dark:text-white">
         
         {/* Coluna esquerda - textos */}
         <div className="flex-1">
-          <h1 className="font-[Gloock] text-3xl font-bold mb-6">Referências</h1>
+          <h1 className="font-[Gloock] text-5xl font-bold mb-6 text-black dark:text-white ">Referências</h1>
           <ul className="space-y-4">
             {artigos.map((artigo, index) => (
               <li key={index} className="font-[Montserrat]">

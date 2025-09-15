@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+body {
+  background-color: var(--off-white);
+  color: var(--black);
+  font-family: 'Montserrat', sans-serif; /* Exemplo de fonte padrão */
+}
+
+/* Tema Escuro (aplicado quando o <html> tem a classe 'dark') */
+.dark body {
+  background-color: var(--dark-blue);
+  color: var(--off-white);
+}
+
+
 .gloock-regular {
     font-family: "Gloock", serif;
     font-weight: 400;

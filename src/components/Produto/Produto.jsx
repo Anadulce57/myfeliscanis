@@ -3,7 +3,7 @@ import Header from "../Navegacao/Header"
 
 export default function Produto() {
   return (
-    <div className="min-h-screen font-sans text-gray-800">
+    <div className="min-h-screen font-sans text-gray-800  dark:text-white">
       <Header />
 
       {/* Conteúdo */}

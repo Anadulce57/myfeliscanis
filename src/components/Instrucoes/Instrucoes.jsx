@@ -8,7 +8,7 @@ export default function Instrucoes() {
         {/* Passos */}
         <aside className="flex-1">
           <h2 className="text-2xl text-[var(--off-brown)]  text-gray-850 font-semibold mb-6 mt-7 ">Como usar o dispositivo</h2>
-          <ol className="space-y-4 list-decimal list-inside text-gray-700  text-lg leading-relaxed">
+          <ol className="space-y-4 list-decimal list-inside text-lg leading-relaxed text-black dark:text-white">
             <li>Instale o dispositivo na incubadora e conecte à energia.</li>
             <li>
               Configure pelo app ou painel: defina o tipo de animal e a temperatura ideal.

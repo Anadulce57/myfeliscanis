@@ -14,7 +14,7 @@ export default function GameIntro() {
           <h1 className="text-6xl font-[Gloock] mb-12">
             Conheça nosso jogo
           </h1>
-          <p className="text-xl leading-relaxed font-[Montserrat] text-gray-700">
+          <p className="text-xl leading-relaxed font-[Montserrat] text-black dark:text-white">
             Conheça agora um jogo incrível e cheio de magia inspirado em Studio
             Ghibli, onde você terá a missão de procurar por filhotes perdidos em
             uma floresta cheia de mistérios. <br />

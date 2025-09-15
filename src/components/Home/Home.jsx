@@ -3,16 +3,16 @@ import Imagem from "/imgs/pets.jpg"
 
 export default function Home(){
     return(
-        <div className="min-h-screen font-sans text-gray-800">
+        <div className="min-h-screen font-sans text-gray-800  dark:text-white">
           <Header/>
         <section className="flex flex-col lg:flex-row max-w-8xl mx-auto px-6 py-16 gap-16 p-4 w-full">
           <div className="w-full h-dvh flex flex-col justify-center items-center p-8">
             <img src={Imagem} alt="pets" className=" w-[682] h-[401] max-w-md lg:max-w-full rounded-sm shadow-lg my-1 translate-y-[-65px]"/>
-            <h1 className="text-4xl font-[Montserrat] lg:text-3xl font-bold text-gray-900 mt-7 text-left translate-y-[-10px] ">Venha conhecer mais sobre a nossa 
+            <h1 className="text-4xl font-[Montserrat] lg:text-3xl font-bold text-gray-900 mt-7 text-left translate-y-[-10px] dark:text-white">Venha conhecer mais sobre a nossa 
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>
           </div>
   
-          <div className="w-full lg:w-[700px] h-[250] bg-gray-900 text-white p-8 flex flex-col justify-center rounded-sm">
+          <div className="w-full lg:w-[700px] h-[250] bg-[#0E1016] text-white p-8 flex flex-col justify-center rounded-sm">
             <div className="mb-9">
               <h1 className="text-3xl font-bold mb-3 font-[Montserrat]">A empresa</h1>
               <p className="text-gray-300 text-lg font-[Montserrat]">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
