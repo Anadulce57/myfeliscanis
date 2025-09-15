@@ -27,12 +27,12 @@ export default function Header() {
                     <li>
             <button onClick={toggleTheme} className="cursor-pointer focus:outline-none">
               {theme === "dark" ? (
-                // Ícone do Sol quando o tema é dark
+
                 <span className="material-symbols-outlined">wb_sunny</span>
               ) : (
-                // Ícone da Lua quando o tema não é dark (claro)
-                <span className="material-symbols-outlined">dark_mode</span>
-              )}
+    
+                <span className="material-symbols-outlined">moon_stars</span>               
+                )}
             </button>
           </li>
                     <li className="hover:underline">

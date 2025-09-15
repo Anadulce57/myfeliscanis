@@ -33,7 +33,7 @@ export default function Membros() {
   return (
     <div className=" text-dark py-10 px-4 md:px-16 min-h-screen pt-4">
         <Header/>
-      <h1 className=" font-[Gloock] text-center text-4xl font-bold text-[#915c43] mb-5 dark:text-white">Conheça o time</h1>
+      <h1 className=" font-gloock text-center text-4xl font-bold text-off-brown mb-5 dark:text-white">Conheça o time</h1>
       {/* Desktop layout */}
       <div className="hidden lg:flex justify-between gap-6 h-73">
         {membros.map((membro, i) => (

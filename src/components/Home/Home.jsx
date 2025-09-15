@@ -12,7 +12,7 @@ export default function Home(){
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>
           </div>
   
-          <div className="w-full lg:w-[700px] h-[250] bg-[#0E1016] text-white p-8 flex flex-col justify-center rounded-sm">
+          <div className="w-full lg:w-[700px] h-[250] bg-[#0E1016] text-white p-8 flex flex-col justify-center rounded-sm dark:bg-[#5B8266] ">
             <div className="mb-9">
               <h1 className="text-3xl font-bold mb-3 font-[Montserrat]">A empresa</h1>
               <p className="text-gray-300 text-lg font-[Montserrat]">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 

@@ -24,7 +24,7 @@ export default function Referencias() {
   return (
     <div className="min-h-screen font-sans text-gray-800  dark:text-white">
       <Header />
-      <div className="flex flex-col lg:flex-row gap-8 px-6 py-10 text-black dark:text-white">
+      <div className="flex flex-col lg:flex-row gap-8 px-6 py-10 text-black dark:text-white lg:text-3xl pt-50">
         
         {/* Coluna esquerda - textos */}
         <div className="flex-1">
@@ -39,11 +39,11 @@ export default function Referencias() {
         </div>
 
         {/* Coluna direita - imagem */}
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center w-full">
           <img
             src="/imgs/cao1-Thor.png"
             alt="Cachorro dormindo"
-            className="rounded-sm w-full max-w-md object-cover"
+            className="w-169 h-169 object-cover rounded-md -mt-20"
           />
         </div>
       </div>

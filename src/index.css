@@ -3,36 +3,13 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 
-body {
-  background-color: var(--off-white);
-  color: var(--black);
-  font-family: 'Montserrat', sans-serif; /* Exemplo de fonte padrão */
+@theme {
+  --color-off-brown: #7A4A33;
+  --color-dark-blue: #161925;
+  --color-green: #5B8266;
+  --color-off-white: #F9F5F3;
+  --color-black: #0E0209;
+
+  --font-gloock: "Gloock", serif;
+  --font-montserrat: "Montserrat", sans-serif;
 }
-
-/* Tema Escuro (aplicado quando o <html> tem a classe 'dark') */
-.dark body {
-  background-color: var(--dark-blue);
-  color: var(--off-white);
-}
-
-
-.gloock-regular {
-    font-family: "Gloock", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal
-  }
-
-  :root {
-    --off-brown: #7A4A33;
-    --dark-blue: #161925;
-    --green: #5B8266;
-    --off-white: #F9F5F3;
-    --black: #0E0209;
-  }
