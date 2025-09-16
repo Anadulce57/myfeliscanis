@@ -28,7 +28,7 @@ export default function Instrucoes() {
           <img
             src="./imgs/caoGato.jpg"
             alt="Imagem de um cachorro e um gato representando os animais monitorados"
-            className=" max-w-full h-auto shadow-xl rounded-sm"
+            className=" max-w-full h-auto shadow-xl rounded-sm mb-90"
           />
         </section>
       </main>

@@ -24,12 +24,6 @@ export default function Header() {
     return(
         <header>
       <nav className="md:flex justify-end items-center p-4">
-        <ul>
-          <li>
-            
-          </li>
-        </ul>
-
         <ul className="flex space-x-10 me-12">
           <li>
             <button onClick={toggleTheme} className="cursor-pointer focus:outline-none">

@@ -46,7 +46,7 @@ export default function Membros() {
       </div>
 
       <div className="lg:hidden flex flex-col items-center relative">
-        <div className="bg-off-brown text-bla rounded-2xl px-6 pt-16 pb-6 text-center relative w-full max-w-xs shadow-md mt-40">
+        <div className="bg-off-brown text-bla rounded-2xl px-6 pt-16 pb-6 text-center relative w-full max-w-xs shadow-md mt-40 dark:bg-white dark:text-black">
           <img src={membros[index].imagem} alt={membros[index].nome} className="w-24 h-24 rounded-full absolute top-[-48px] left-1/2 transform -translate-x-1/2 object-cover border-4 border-[#e7dce0]" />
           <h3 className="text-xl font-semibold">{membros[index].nome}</h3>
           <p className="mt-2 text-sm">{membros[index].descricao}</p>
