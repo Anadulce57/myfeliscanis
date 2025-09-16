@@ -1,6 +1,4 @@
 import Header from "../Navegacao/Header"
-import Imagem from "/imgs/caoGato.jpg"
-
 export default function Instrucoes() {
   return (
     <div className="min-h-screen relative pt-2">
@@ -27,7 +25,7 @@ export default function Instrucoes() {
         {/* Imagem */}
         <section className="flex-1 flex items-center justify-center h-screen mx-auto">
           <img
-            src={Imagem}
+            src="./imgs/caoGato.jpg"
             alt="Imagem de um cachorro e um gato representando os animais monitorados"
             className=" max-w-full h-auto shadow-xl rounded-sm mb-90"
           />
