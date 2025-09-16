@@ -2,7 +2,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 @theme {
   --color-off-brown: #7A4A33;
   --color-dark-blue: #161925;
