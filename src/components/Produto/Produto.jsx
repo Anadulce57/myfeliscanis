@@ -17,14 +17,14 @@ export default function Produto() {
           />
 
           {/* Caixa de preços embaixo da imagem */}
-          <div className="bg-[#0E1016] text-white p-10 rounded-sm w-full max-w-sm text-lg">
+          <div className="bg-[#0E1016] text-white p-10 rounded-sm w-full max-w-sm text-lg dark:bg-[#5B8266] ">
             <p>Placa Arduino – R$ 73,06</p>
             <p>Protoboard – R$ 5,69</p>
           </div>
         </div>
 
         {/* Coluna 2 - Descrição */}
-        <div className="bg-[#0E1016] text-white p-6 rounded-sm space-y-6">
+        <div className="bg-[#0E1016] text-white p-6 rounded-sm space-y-6 dark:bg-[#5B8266] ">
           <div>
             <h1 className="font-[Montserrat] text-[var(--off-white)] text-2xl font-bold mb-2">
               Smart FelisCanis

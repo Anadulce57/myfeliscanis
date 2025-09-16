@@ -37,8 +37,8 @@ export default function Membros() {
       {/* Desktop layout */}
       <div className="hidden lg:flex justify-between gap-6 h-73">
         {membros.map((membro, i) => (
-          <div key={i} className="bg-[#915c43] rounded-2xl px-6 pt-16 pb-6 text-center relative flex-1 shadow-md h-full mt-33 dark:bg-white">
-            <img src={membro.imagem} alt={membro.nome} className="w-20 h-20 rounded-full absolute top-[-40px] left-1/2 transform -translate-x-1/2 object-cover border-4 border-[#cec2c6]" />
+          <div key={i} className="bg-off-brown rounded-2xl px-6 pt-16 pb-6 text-center relative flex-1 shadow-md h-full mt-33 dark:bg-white dark:text-black">
+            <img src={membro.imagem} alt={membro.nome} className="w-20 h-20 rounded-full absolute top-[-40px] left-1/2 transform -translate-x-1/2 object-cover border-4 border-[#b1ae9c]" />
             <h3 className="text-xl font-semibold">{membro.nome}</h3>
             <p className= "font-[Montserrat] text-[var(--black)] mt-2 text-sm">{membro.descricao}</p>
           </div>
@@ -46,7 +46,7 @@ export default function Membros() {
       </div>
 
       <div className="lg:hidden flex flex-col items-center relative">
-        <div className="bg-[#915c43] text-bla rounded-2xl px-6 pt-16 pb-6 text-center relative w-full max-w-xs shadow-md mt-40 dark: text-black">
+        <div className="bg-off-brown text-bla rounded-2xl px-6 pt-16 pb-6 text-center relative w-full max-w-xs shadow-md mt-40">
           <img src={membros[index].imagem} alt={membros[index].nome} className="w-24 h-24 rounded-full absolute top-[-48px] left-1/2 transform -translate-x-1/2 object-cover border-4 border-[#e7dce0]" />
           <h3 className="text-xl font-semibold">{membros[index].nome}</h3>
           <p className="mt-2 text-sm">{membros[index].descricao}</p>
