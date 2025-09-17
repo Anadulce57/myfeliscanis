@@ -1,4 +1,6 @@
-import Header from "../Navegacao/Header"
+import imgCg from "/imgs/caoGato.jpg";
+import Header from "../Navegacao/Header";
+
 export default function Instrucoes() {
   return (
     <div className="min-h-screen relative pt-2">
@@ -6,7 +8,7 @@ export default function Instrucoes() {
       <main className="flex flex-col lg:flex-row max-w-7xl mx-auto px-6 py-16 gap-16">
         {/* Passos */}
         <aside className="flex-1">
-          <h2 className="text-2xl text-[var(--off-brown)]  text-gray-850 font-semibold mb-6 mt-7 ">Como usar o dispositivo</h2>
+          <h2 className="text-2xl text-off-brown text-gray-850 font-semibold mb-6 mt-7 dark:text-off-white">Como usar o dispositivo</h2>
           <ol className="space-y-4 list-decimal list-inside text-lg leading-relaxed text-black dark:text-white items-end mt-21">
             <li>Instale o dispositivo na incubadora e conecte à energia.</li>
             <li>
@@ -25,8 +27,8 @@ export default function Instrucoes() {
         {/* Imagem */}
         <section className="flex-1 flex items-center justify-center h-screen mx-auto">
           <img
-            src="./imgs/caoGato.jpg"
-            alt="Imagem de um cachorro e um gato representando os animais monitorados"
+            src={imgCg}
+            alt="Imagem de um cachorro e um gato"
             className=" max-w-full h-auto shadow-xl rounded-sm mb-90"
           />
         </section>

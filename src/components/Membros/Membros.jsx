@@ -59,7 +59,7 @@ export default function Membros() {
         </div>
       </div>
 
-      <p className="text-left text-sm  text-[#7A4A33] mt-100 dark:text-white">Dúvidas? Chama no insta @Fellis_Canis</p>
+      <p className="text-left text-sm  text-off-brown mt-100 dark:text-white">Dúvidas? Chama no insta @Fellis_Canis</p>
     </div>
   );
 }

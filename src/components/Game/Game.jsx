@@ -11,10 +11,10 @@ export default function GameIntro() {
       <main className="flex flex-1">
         {/* Coluna esquerda: texto */}
         <section className="w-1/2 flex flex-col justify-center px-20 py-16">
-          <h1 className="text-6xl font-[Gloock] mb-12">
+          <h1 className="text-6xl font-gloock mb-12">
             Conheça nosso jogo
           </h1>
-          <p className="text-xl leading-relaxed font-[Montserrat] text-black dark:text-white">
+          <p className="text-xl leading-relaxed font-montserrat text-black dark:text-white">
             Conheça agora um jogo incrível e cheio de magia inspirado em Studio
             Ghibli, onde você terá a missão de procurar por filhotes perdidos em
             uma floresta cheia de mistérios. <br />
@@ -50,7 +50,7 @@ export default function GameIntro() {
               alt="Felis Canis Logo"
               className="w-48 mb-10"
             />
-            <button className="px-12 py-4 rounded-full text-lg text-white font-[Playfair] bg-white/20 hover:bg-white/30 backdrop-blur-lg transition">
+            <button className="px-12 py-4 rounded-full text-lg text-white font-[Playfair] bg-white/20 hover:bg-white/30 backdrop-blur-lg transition cursor-pointer">
               Play
             </button>
           </div>
