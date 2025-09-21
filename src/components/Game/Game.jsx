@@ -2,6 +2,11 @@ import React from "react";
 import Header from "../Navegacao/Header";
 
 export default function GameIntro() {
+
+  const alerta = () => {
+    alert("Sentimos muito, jogo ainda em desenvolvimento")
+  }
+
   return (
     <div className="flex flex-col h-screen font-inter">
       {/* Header */}
@@ -50,7 +55,7 @@ export default function GameIntro() {
               alt="Felis Canis Logo"
               className="w-48 mb-10"
             />
-            <button className="px-12 py-4 rounded-full text-lg text-white font-[Playfair] bg-white/20 hover:bg-white/30 backdrop-blur-lg transition cursor-pointer">
+            <button onClick={alerta} className="px-12 py-4 rounded-full text-lg text-white font-[Playfair] bg-white/20 hover:bg-white/30 backdrop-blur-lg transition cursor-pointer">
               Play
             </button>
           </div>

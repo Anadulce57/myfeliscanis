@@ -3,7 +3,7 @@ import Header from "../Navegacao/Header";
 
 export default function Instrucoes() {
   return (
-    <div className="min-h-screen relative pt-2">
+    <div className="min-h-screen">
      <Header/>
       <main className="flex flex-col lg:flex-row max-w-7xl mx-auto px-6 py-16 gap-16">
         {/* Passos */}
@@ -29,7 +29,7 @@ export default function Instrucoes() {
           <img
             src={imgCg}
             alt="Imagem de um cachorro e um gato"
-            className=" max-w-full h-auto shadow-xl rounded-sm mb-90"
+            className=" max-w-full h-auto shadow-xl rounded-sm align-center justify-center mb-50"
           />
         </section>
       </main>

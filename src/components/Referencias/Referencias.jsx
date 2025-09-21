@@ -23,7 +23,7 @@ export default function Referencias() {
   ];
 
   return (
-    <div className="min-h-screen font-sans dark:text-white">
+    <div className="min-h-screen">
       <Header />
       <div className="flex flex-col lg:flex-row gap-8 px-6 py-10 text-black dark:text-white lg:text-3xl pt-50">
         
@@ -44,7 +44,7 @@ export default function Referencias() {
           <img
             src={Imagem}
             alt="Cachorro dormindo"
-            className="w-169 h-169 object-cover rounded-md -mt-20"
+            className="w-160 h-160 object-cover rounded-md mt-20"
           />
         </div>
       </div>
