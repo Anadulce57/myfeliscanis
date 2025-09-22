@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from "react";
-import sunny from "/public/icons/sunny.png";
-import moon from "/public/icons/mode_night.png";
-import homeDark from "/public/icons/homeDark.png";
-import homeWhite from "/public/icons/homeWhite.png";
+import sunny from "/icons/sunny.png";
+import moon from "/icons/mode_night.png";
+import homeDark from "/icons/homeDark.png";
+import homeWhite from "/icons/homeWhite.png";
 
-export default function Header() {
+export default function Header() {     
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") ?? "");
     const navigate = useNavigate();
-
+    
     useEffect(() => {
         localStorage.setItem("theme", theme)
         const root = document.documentElement
