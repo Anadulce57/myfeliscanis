@@ -6,7 +6,7 @@ export default function Home(){
         <div className="min-h-screen">
           <Header/>
         <section className="flex flex-col lg:flex-row max-w-8xl mx-auto px-6 py-16 gap-16 p-4 w-full">
-          <div className="w-full h-dvh flex flex-col justify-center items-center p-8">
+          <div className="w-full h-dvh flex flex-col justify-center items-center p-8 ">
             <img src={Imagem} alt="pets" className=" w-[682] h-[401] max-w-md lg:max-w-full rounded-sm shadow-lg my-1 translate-y-[-65px]"/>
             <h1 className="text-4xl font-montserrat lg:text-3xl font-bold text-dark-blue mt-7 text-left translate-y-[-10px] dark:text-off-white">Venha conhecer mais sobre a nossa 
             empresa e produtos. E fazer parte do avanço tecnológico no mercado Pet!</h1>

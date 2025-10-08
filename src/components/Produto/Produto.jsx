@@ -26,25 +26,25 @@ export default function Produto() {
         {/* Coluna 2 - Descrição */}
         <div className="bg-dark-blue text-white p-6 rounded-sm space-y-6 dark:bg-green">
           <div>
-            <h1 className="font-montserrat text-off-white text-2xl font-bold mb-2">
+            <h1 className="font-montserrat text-off-white text-2xl font-bold mb-2 hidden lg:inline">
               Smart FelisCanis
             </h1>
-            <p className="font-montserrat text-sm">
+            <p className="font-montserrat text-sm hidden lg:inline">
               O desenvolvimento de um dispositivo portátil IOT evidencia o potencial de inovação no mercado pet, oferecendo auxílios práticos que atendem às necessidades tanto dos animais quanto de seus tutores.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold mb-1">Objetivo</h2>
-            <p className="font-montserrat text-sm">
+            <h2 className="text-xl font-semibold mb-1 hidden lg:inline">Objetivo</h2>
+            <p className="font-montserrat text-sm ">
               Este dispositivo irá gerenciar a temperatura do ambiente, para estar em uma quantidade adequada, irá monitorar a temperatura do ambiente, qualidade do ar e informar ao tutor ou funcionário que atua no mercado pet todos os dados pelo dispositivo e pelo aplicativo.
               No aplicativo, apenas, terá como visualizar o animal por uma câmera, além de fazer uma ficha do cachorro ou gato e será notificado das próximas vacinas e vermífugos.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold mb-1">Resultados</h2>
-            <p className="font-montserrat text-sm">
+            <h2 className="text-xl font-semibold mb-1 hidden lg:inline">Resultados</h2>
+            <p className="font-montserrat text-sm hidden lg:inline">
               Os resultados obtidos indicam que há uma demanda crescente por tecnologia voltada ao bem-estar animal, e que o uso de dispositivos inteligentes pode representar um diferencial competitivo significativo nesse setor.
             </p>
           </div>

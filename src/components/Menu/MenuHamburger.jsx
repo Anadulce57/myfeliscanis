@@ -9,7 +9,7 @@ const MenuHamburger = () => {
 
   return (
     <div className="relative z-50">
-      {/* Ícone do Hamburger */}
+
       <button
         onClick={toggleMenu}
         className="fixed top-6 right-6 z-50 flex h-8 w-8 flex-col items-center justify-center space-y-2 focus:outline-none md:hidden"
