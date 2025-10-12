@@ -46,18 +46,33 @@ export default function Header() {
           <div className={`h-0.5 w-6 transform transition duration-300 ease-in-out ${isMenuOpen ? '-translate-y-2 -rotate-45 bg-black' : 'bg-black'}`}></div>
         </button>
 
+        {/* Overlay escuro com opacidade ao abrir o menu */}
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 z-30 bg-black bg-opacity-50 transition-opacity duration-300"
+            onClick={toggleMenu}
+          ></div>
+        )}
+
         {/* Menu Mobile */}
         <nav
-          className={`fixed inset-0 z-40 transition-transform duration-500 ease-in-out ${
+          className={`fixed top-0 right-0 h-full w-3/4 max-w-xs z-40 transition-transform duration-500 ease-in-out ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } ${theme === "dark" ? "bg-black text-white" : "bg-white text-gray-800"}`}
         >
-          <ul className="flex h-full flex-col items-center justify-center space-y-6 text-xl font-bold">
-          <li className="hover:underline"><Link to="/instrucoes">Instruções</Link></li>
-          <li className="hover:underline"><Link to="/produto">O produto</Link></li>
-          <li className="hover:underline"><Link to="/game">Nosso jogo</Link></li>
-          <li className="hover:underline"><Link to="/membros">Quem somos?</Link></li>
-          <li className="hover:underline"><Link to="/referencias">referencias</Link></li>
+          <button
+            onClick={toggleMenu}
+            className="absolute top-6 right-6 text-2xl font-bold"
+          >
+            ✕
+          </button>
+
+          <ul className="flex h-full flex-col items-start justify-center pl-8 space-y-6 text-xl font-bold">
+            <li className="hover:underline"><Link to="/instrucoes" onClick={toggleMenu}>Instruções</Link></li>
+            <li className="hover:underline"><Link to="/produto" onClick={toggleMenu}>O produto</Link></li>
+            <li className="hover:underline"><Link to="/game" onClick={toggleMenu}>Nosso jogo</Link></li>
+            <li className="hover:underline"><Link to="/membros" onClick={toggleMenu}>Quem somos?</Link></li>
+            <li className="hover:underline"><Link to="/referencias" onClick={toggleMenu}>Referências</Link></li>
           </ul>
         </nav>
 
@@ -87,7 +102,7 @@ export default function Header() {
           <li className="hover:underline"><Link to="/produto">O produto</Link></li>
           <li className="hover:underline"><Link to="/game">Nosso jogo</Link></li>
           <li className="hover:underline"><Link to="/membros">Quem somos?</Link></li>
-          <li className="hover:underline"><Link to="/referencias">referencias</Link></li>
+          <li className="hover:underline"><Link to="/referencias">Referências</Link></li>
         </ul>
       </nav>
     </header>

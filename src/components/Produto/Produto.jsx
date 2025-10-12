@@ -29,7 +29,7 @@ export default function Produto() {
             <h1 className="font-montserrat text-off-white text-2xl font-bold mb-2 hidden lg:inline">
               Smart FelisCanis
             </h1>
-            <p className="font-montserrat text-sm hidden lg:inline">
+            <p className="font-montserrat text-sm">
               O desenvolvimento de um dispositivo portátil IOT evidencia o potencial de inovação no mercado pet, oferecendo auxílios práticos que atendem às necessidades tanto dos animais quanto de seus tutores.
             </p>
           </div>

@@ -14,15 +14,15 @@ export default function Home(){
   
           <div className="w-full lg:w-[700px] h-[250] bg-dark-blue text-off-white p-8 flex flex-col justify-center rounded-sm dark:bg-green ">
             <div className="mb-9">
-              <h1 className="text-3xl font-bold mb-3 font-montserrat">A empresa</h1>
-              <p className="text-off-white text-lg font-montserrat">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
+              <h1 className="text-3xl font-bold mb-3 font-montserrat hidden lg:inline">A empresa</h1>
+              <p className="text-off-white text-lg font-montserrat hidden lg:inline">Atualmente o mercado pet tem crescido rapidamente, impulsionado pelo aumento 
               do número de animais de estimação e pela valorização dos cuidados com seu bem-estar. Hoje, os pets são vistos 
               como membros da família, o que estimula a busca por produtos e serviços especializados. Esse cenário reforça a 
               importância de discutir a melhora dos cuidados com os animais e os impactos desse setor em expansão.</p>
             </div>
   
             <div className="mb-9">
-              <h1 className="text-3xl font-bold mb-4">Objetivo</h1>
+              <h1 className="text-3xl font-bold mb-4 hidden lg:inline">Objetivo</h1>
               <p className="text-off-white text-lg font-montserrat">Impactar o mercado pet, que está em crescente expansão, a partir do uso da 
               tecnologia de monitoramento e gerenciamento.</p>
             </div>
