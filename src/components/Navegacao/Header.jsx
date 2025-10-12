@@ -6,6 +6,7 @@ import moon from "/icons/mode_night.png";
 import homeDark from "/icons/homeDark.png";
 import homeWhite from "/icons/homeWhite.png";
 
+
 export default function Header() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") ?? "");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,19 +40,18 @@ export default function Header() {
         {/* Botão Hamburger para mobile */}
         <button
           onClick={toggleMenu}
-          className="fixed top-6 right-6 z-50 flex h-8 w-8 flex-col items-center justify-center space-y-2 focus:outline-none md:hidden"
+          className={`fixed top-6 right-6 z-50 h-8 w-8 flex-col items-center justify-center space-y-2 focus:outline-none md:hidden ${isMenuOpen ? 'hidden' : 'flex'}`}
         >
           <div className={`h-0.5 w-6 transform transition duration-300 ease-in-out ${isMenuOpen ? 'translate-y-2 rotate-45 bg-black' : 'bg-black'}`}></div>
           <div className={`h-0.5 w-6 transition duration-300 ease-in-out ${isMenuOpen ? 'scale-0 opacity-0' : 'bg-black'}`}></div>
           <div className={`h-0.5 w-6 transform transition duration-300 ease-in-out ${isMenuOpen ? '-translate-y-2 -rotate-45 bg-black' : 'bg-black'}`}></div>
         </button>
 
-        {/* Overlay escuro com opacidade ao abrir o menu */}
         {isMenuOpen && (
-          <div
-            className="fixed inset-0 z-30 bg-black bg-opacity-50 transition-opacity duration-300"
-            onClick={toggleMenu}
-          ></div>
+         <div
+         className="fixed inset-0 z-30 bg-[rgba(0,0,0,0.25)] transition-opacity duration-300" 
+         onClick={toggleMenu}
+     ></div>
         )}
 
         {/* Menu Mobile */}
