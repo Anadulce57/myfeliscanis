@@ -65,7 +65,6 @@ export default function GameIntro() {
               </button>
             </div>
 
-            {/* Aviso Mobile */}
             <div className="flex md:hidden flex-col items-center bg-black/50 p-6 rounded-lg">
               <p className="text-white text-center text-lg">
                 O jogo está disponível apenas no computador. <br />

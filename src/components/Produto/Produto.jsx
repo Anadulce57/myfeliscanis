@@ -21,9 +21,8 @@ export default function Produto() {
           />
 
           {/* Caixa de preços */}
-          <div className="bg-dark-blue text-white p-10 rounded-sm w-full max-w-sm text-lg dark:bg-green">
-            <p>Placa Arduino – R$ 73,06</p>
-            <p>Protoboard – R$ 51,69</p> 
+          <div className="bg-dark-blue text-white p-6 rounded-sm w-full max-w-sm text-lg dark:bg-green">
+            <p>Utilizamos o Arduino IDE, logo componentes arduino, como protoboard e  sensores. Além do uso de ESP-32 para conectar via bluetooth</p>
           </div>
         </div>
 
