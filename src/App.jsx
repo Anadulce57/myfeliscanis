@@ -5,6 +5,7 @@ import GameIntro from "./components/Game/Game";
 import Referencias from "./components/Referencias/Referencias";
 import Instrucoes from "./components/Instrucoes/Instrucoes";
 import Home from "./components/Home/Home";
+import Apresentacao from "./components/Apresentacao/Apresentacao";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/game" element={<GameIntro/>}/>
           <Route path="/referencias" element={<Referencias/>}/>
           <Route path="/instrucoes" element={<Instrucoes/>}/>
+          <Route path="/apresentacao" element={<Apresentacao/>}/>
         </Routes>
       </Router>
     </div>

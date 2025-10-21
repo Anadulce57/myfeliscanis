@@ -97,6 +97,7 @@ export default function Header() {
           <li className="hover:underline"><Link to="/game">Nosso jogo</Link></li>
           <li className="hover:underline"><Link to="/membros">Quem somos?</Link></li>
           <li className="hover:underline"><Link to="/referencias">Referências</Link></li>
+          <li className="hover:underline"><Link to="/apresentacao">Comece aqui</Link></li>
         </ul>
       </nav>
 
@@ -127,6 +128,7 @@ export default function Header() {
           <li className="hover:underline"><Link to="/game" onClick={toggleMenu}>Nosso jogo</Link></li>
           <li className="hover:underline"><Link to="/membros" onClick={toggleMenu}>Quem somos?</Link></li>
           <li className="hover:underline"><Link to="/referencias" onClick={toggleMenu}>Referências</Link></li>
+          <li className="hover:underline"><Link to="/apresentacao">Comece aqui</Link></li>
         </ul>
       </nav>
     </header>

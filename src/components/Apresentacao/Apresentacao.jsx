@@ -14,11 +14,7 @@ export default function Apresentacao(){
             <p className="font-[Montserrat] text-lg text-amber-50">Um novo olhar tecnológico no mercado pet</p>
           </div>
   
-          <button className="mt-8 px-8 py-3 bg-amber-50 text-gray-800 font-bold rounded-full shadow-lg hover:bg-gray-800 hover:text-amber-50 transition duration-300">Saiba mais</button>
-  
-          <div className="footer flex place-items-start item-start mt-8">
-            <a href=""><p className="font-[Montserrat] ml-2 text-amber-50">Instale o aplicativo</p></a>
-          </div>
+          <button className="mt-8 px-8 py-3 bg-amber-50 text-gray-800 font-bold rounded-full shadow-lg hover:bg-gray-800 hover:text-amber-50 transition duration-300">Ao aplicativo</button>
         </section>
       </div>
     )   
