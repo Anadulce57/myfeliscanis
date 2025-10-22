@@ -1,5 +1,5 @@
-import Header from "../Navegacao/Header"
-import Imagem from "/imgs/pets.jpg"
+import Header from "../Navegacao/Header";
+import Imagem from "/imgs/pets.jpg";
 
 export default function Home() {
   return (
